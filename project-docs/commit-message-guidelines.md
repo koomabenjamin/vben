@@ -20,11 +20,69 @@ Examples:
 
 ## Allowed scopes
 
-Use one of the following scopes when applicable:
+Use one of the following scopes when applicable. Grouping is provided to help pick the most appropriate scope for your change.
 
-`@vben/backend-mock`, `@vben/web-antd`, `@vben/web-ele`, `@vben/web-naive`, `@vben/web-tdesign`, `@vben/docs`, `@vben/commitlint-config`, `@vben/eslint-config`, `@vben/prettier-config`, `@vben/stylelint-config`, `@vben/node-utils`, `@vben/tailwind-config`, `@vben/tsconfig`, `@vben/vite-config`, `@vben-core/design`, `@vben-core/icons`, `@vben-core/shared`, `@vben-core/typings`, `@vben-core/composables`, `@vben-core/preferences`, `@vben-core/form-ui`, `@vben-core/layout-ui`, `@vben-core/menu-ui`, `@vben-core/popup-ui`, `@vben-core/shadcn-ui`, `@vben-core/tabs-ui`, `@vben/constants`, `@vben/access`, `@vben/common-ui`, `@vben/hooks`, `@vben/layouts`, `@vben/plugins`, `@vben/request`, `@vben/icons`, `@vben/locales`, `@vben/preferences`, `@vben/stores`, `@vben/styles`, `@vben/types`, `@vben/utils`, `@vben/playground`, `@vben/turbo-run`, `@vben/vsh`, `project`, `style`, `lint`, `ci`, `dev`, `deploy`, `other`
+- Apps & playground:
+  - `@vben/backend-mock`
+  - `@vben/web-antd`
+  - `@vben/web-ele`
+  - `@vben/web-naive`
+  - `@vben/web-tdesign`
+  - `@vben/playground`
 
-If your change affects multiple areas, use `project` or `other` as the scope.
+- Project tooling & configs:
+  - `@vben/docs`
+  - `@vben/commitlint-config`
+  - `@vben/eslint-config`
+  - `@vben/prettier-config`
+  - `@vben/stylelint-config`
+  - `@vben/node-utils`
+  - `@vben/tailwind-config`
+  - `@vben/tsconfig`
+  - `@vben/vite-config`
+  - `@vben/turbo-run`
+  - `@vben/vsh`
+
+- Core packages (`@vben-core`):
+  - `@vben-core/design`
+  - `@vben-core/icons`
+  - `@vben-core/shared`
+  - `@vben-core/typings`
+  - `@vben-core/composables`
+  - `@vben-core/preferences`
+  - `@vben-core/form-ui`
+  - `@vben-core/layout-ui`
+  - `@vben-core/menu-ui`
+  - `@vben-core/popup-ui`
+  - `@vben-core/shadcn-ui`
+  - `@vben-core/tabs-ui`
+
+- Libraries & utilities:
+  - `@vben/constants`
+  - `@vben/access`
+  - `@vben/common-ui`
+  - `@vben/hooks`
+  - `@vben/layouts`
+  - `@vben/plugins`
+  - `@vben/request`
+  - `@vben/icons`
+  - `@vben/locales`
+  - `@vben/preferences`
+  - `@vben/stores`
+  - `@vben/styles`
+  - `@vben/types`
+  - `@vben/utils`
+
+- Misc / repo-wide scopes:
+  - `project`
+  - `style`
+  - `lint`
+  - `ci`
+  - `dev`
+  - `deploy`
+  - `other`
+
+If your change affects multiple areas, prefer `project` or `other` as the scope.
 
 ## Validation and tooling
 
@@ -66,4 +124,4 @@ Avoid using `--no-verify` unless absolutely necessary.
 
 ---
 
-Questions or suggested improvements: open an issue or create a PR against `project-docs/README.md`.
+Questions or suggested improvements: open an issue or create a PR against `project-docs/commit-message-guidelines.md`.

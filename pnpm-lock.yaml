@@ -334,7 +334,7 @@ catalogs:
       specifier: ^4.4.1
       version: 4.7.1
     pkg-types:
-      specifier: ^2.2.0
+      specifier: ^2.3.0
       version: 2.3.0
     playwright:
       specifier: ^1.56.1

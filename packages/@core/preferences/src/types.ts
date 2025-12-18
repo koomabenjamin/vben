@@ -73,6 +73,7 @@ interface AppPreferences {
   loginExpiredMode: LoginExpiredModeType;
   /** 应用名 */
   name: string;
+  persistence: boolean;
   /** 偏好设置按钮位置 */
   preferencesButtonPosition: PreferencesButtonPositionType;
   /**
@@ -216,6 +217,7 @@ interface TabbarPreferences {
   middleClickToClose: boolean;
   /** 是否持久化标签 */
   persist: boolean;
+  position: 'breadcrumb' | 'default';
   /** 是否开启多标签页图标 */
   showIcon: boolean;
   /** 显示最大化按钮 */

@@ -118,7 +118,6 @@ function clearPreferencesAndLogout() {
   emit('clearPreferencesAndLogout');
 }
 </script>
-
 <template>
   <template
     v-for="slot in leftSlots.filter((item) => item.index < REFERENCE_VALUE)"
@@ -147,6 +146,7 @@ function clearPreferencesAndLogout() {
   >
     <slot name="menu"></slot>
   </div>
+  <!-- eslint-disable vue/no-multiple-template-root -->
   <div class="flex h-full min-w-0 flex-shrink-0 items-center">
     <template v-for="slot in rightSlots" :key="slot.name">
       <slot :name="slot.name">
@@ -179,6 +179,7 @@ function clearPreferencesAndLogout() {
       </slot>
     </template>
   </div>
+  <!-- eslint-disable vue/no-multiple-template-root -->
 </template>
 <style lang="scss" scoped>
 .menu-align-start {

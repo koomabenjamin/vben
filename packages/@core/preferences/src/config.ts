@@ -2,6 +2,7 @@ import type { Preferences } from './types';
 
 const defaultPreferences: Preferences = {
   app: {
+    persistence: true,
     accessMode: 'frontend',
     authPageLayout: 'panel-right',
     checkUpdatesInterval: 1,
@@ -95,6 +96,7 @@ const defaultPreferences: Preferences = {
     width: 224,
   },
   tabbar: {
+    position: 'default',
     draggable: true,
     enable: true,
     height: 38,

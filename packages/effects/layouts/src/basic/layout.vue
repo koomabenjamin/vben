@@ -233,6 +233,7 @@ const headerSlots = computed(() => {
     :side-collapse-width="preferences.sidebar.collapseWidth"
     :tabbar-enable="preferences.tabbar.enable"
     :tabbar-height="preferences.tabbar.height"
+    :tabbar-position="preferences.tabbar.position"
     :z-index="preferences.app.zIndex"
     @side-mouse-leave="handleSideMouseLeave"
     @toggle-sidebar="toggleSidebar"
@@ -286,6 +287,20 @@ const headerSlots = computed(() => {
             :type="preferences.breadcrumb.styleType"
           />
         </template>
+        <!-- <template
+          v-if="
+            !showHeaderNav &&
+            !preferences.breadcrumb.enable &&
+            preferences.tabbar.position === 'breadcrumb'
+          "
+          #menu
+        >
+          <LayoutTabbar
+            v-if="preferences.tabbar.enable"
+            :show-icon="preferences.tabbar.showIcon"
+            :theme="theme"
+          />
+        </template> -->
         <template v-if="showHeaderNav" #menu>
           <LayoutMenu
             :default-active="headerActive"

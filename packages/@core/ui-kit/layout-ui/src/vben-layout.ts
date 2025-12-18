@@ -167,6 +167,11 @@ interface VbenLayoutProps {
    */
   tabbarHeight?: number;
   /**
+   * 标签栏位置
+   * @default 'default'
+   */
+  tabbarPostion?: 'breadcrumb' | 'default';
+  /**
    * zIndex
    * @default 100
    */

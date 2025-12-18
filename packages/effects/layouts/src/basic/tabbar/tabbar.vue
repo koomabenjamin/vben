@@ -63,6 +63,7 @@ if (!preferences.tabbar.persist) {
     @unpin="unpinTab"
     @update:active="handleClick"
   />
+  <!-- eslint-disable vue/no-multiple-template-root -->
   <div class="flex-center h-full">
     <TabsToolMore v-if="preferences.tabbar.showMore" :menus="menus" />
     <TabsToolScreen
@@ -72,4 +73,5 @@ if (!preferences.tabbar.persist) {
       @update:screen="toggleMaximize"
     />
   </div>
+  <!-- eslint-disable vue/no-multiple-template-root -->
 </template>
